@@ -1,0 +1,32 @@
+Set-ExecutionPolicy RemoteSigned -scope CurrentUser
+
+iex (new-object net.webclient).downloadstring('https://get.scoop.sh')
+
+scoop bucket add extras
+scoop bucket add versions
+scoop bucket add java
+
+scoop install 7zip
+scoop install git
+scoop install gradle
+scoop install maven
+
+scoop install java/oraclejdk-lts
+
+scoop install extras/anaconda3
+scoop install extras/ccleaner
+scoop install extras/chromium
+scoop install extras/conemu
+scoop install extras/dbeaver
+scoop install extras/firefox
+scoop install extras/foxit-reader
+
+scoop install extras/find-java
+find-java
+scoop install extras/idea
+scoop install extras/kdiff3
+scoop install extras/keepass
+scoop install extras/mc
+scoop install extras/notepadplusplus
+scoop install extras/sourcetree
+scoop install extras/vlc
